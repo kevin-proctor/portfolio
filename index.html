@@ -7,6 +7,118 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <table>
+        <caption>Weekly Schedule</caption>
+        <tr>
+            <th></th>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <th>Morning</th>
+            <td style="background-color:blue" rowspan="3">Homework</td>
+            <td style="background-color: red; text-align:center" colspan="5" rowspan="2">School</td>
+            <td style="background-color:blue" rowspan="3">Homework</td>    
+        </tr>
+        <tr>
+            <th>Afternoon</th>
+            <td></td>  
+        </tr>
+        <tr>
+            <th>Evening</th>
+            <td style="background-color:blue; text-align:center" colspan="5">Homework</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <section>
+        <h2 style="text-align:center">Window Cleaners</h2>
+        <table>
+            <caption>Business Hours</caption>
+            <tr>
+                <th></th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <th>9AM-12PM</th>
+                <td style="background-color:red; text-align:center">Closed</td>
+                <td style="background-color:blue; text-align:center" rowspan="3" colspan="5">Open</td>
+                <td style="background-color:red; text-align:center">Closed</td>    
+            </tr>
+            <tr>
+                <th>12PM-4PM</th>
+                <td style="background-color:blue; text-align:center" colspan="7"></td>
+            </tr>
+            <tr>
+                <th>4PM-8PM</th>
+                <td style="background-color:red; text-align:center">Closed</td>
+                <td style="background-color:red; text-align:center">Closed</td>   
+            </tr>
+        </table>
+
+        <article>
+            <h2>Request an Appointment</h2>
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone">
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>Building Type</legend>
+                <input type="radio" id="building_type1" name="building_type" value="business" checked="checked">
+                <label for="building_type1">Business</label>
+                <input type="radio" id="building_type2" name="building_type" value="residential">
+                <label for="building_type2">Residential</label>
+            </fieldset>
+            <fieldset>
+                <legend>What day(s) work best?</legend>
+                <input type="checkbox" id="day1" name="day" value="sunday">
+                <label for="day1">Sunday</label>
+                <input type="checkbox" id="day2" name="day" value="monday" checked="checked">
+                <label for="day2">Monday</label>
+                <input type="checkbox" id="day3" name="day" value="tuesday">
+                <label for="day3">Tuesday</label>
+                <input type="checkbox" id="day4" name="day" value="wednesday">
+                <label for="day4">Wednesday</label>
+                <input type="checkbox" id="day5" name="day" value="thursday">
+                <label for="day5">Thursday</label>
+                <input type="checkbox" id="day6" name="day" value="friday">
+                <label for="day6">Friday</label>
+                <input type="checkbox" id="day7" name="day" value="saturday">
+                <label for="day7">Saturday</label>
+            </fieldset>
+            <fieldset>
+                <legend>What timeframe works best?</legend>
+                <label for="timefram">Time</label>
+                <select name="timefram" id="timeframe">
+                    <optgroup label="Saturday and Sunday">
+                    <option value="sat_sun">12PM-4PM</option>
+                    </optgroup>
+                    <optgroup label="Monday through Friday">
+                        <option value="morning" selected>9AM-12PM</option>
+                        <option value="afternoon">12PM-4PM</option>
+                        <option value="evening">4PM-8PM</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <p>We will contact you to let you know when the soonest appointment is available.</p>
+            <input type="submit" value="SUBMIT">
+        </article>
+    </section>
 </body>
 </html>
